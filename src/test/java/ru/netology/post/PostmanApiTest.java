@@ -15,7 +15,7 @@ class PostmanApiTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("args.data.first();", equalTo("some data"))
+                .body("data", equalTo("some data"))
         ;
     }
 }
